@@ -511,6 +511,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     justify-content: space-between;
     border-bottom: 1px solid var(--main-gray);
     background: top / cover no-repeat url('../images/lajolieagence.png');
+    transition: all .250s ease-in;
 }
 
 #projects ul li a::after {

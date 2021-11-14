@@ -192,10 +192,22 @@ TweenMax.to(".third", 1.5, {
 });
 // BANNER
 gsap.fromTo(
+  ".gsap-nav",
+  1,
+  { y: -100, opacity: 0 },
+  { y: 0, opacity: 1, duration: 1, delay: 1.4 }
+);
+gsap.fromTo(
+  ".gsap-icons",
+  1,
+  { y: 100, opacity: 0 },
+  { y: 0, opacity: 1, duration: 1, delay: 1.5 }
+);
+gsap.fromTo(
   ".gsap-banner_img",
   1,
   { opacity: 0 },
-  { opacity: 1, duration: 1, delay: 1.5 }
+  { opacity: 1, duration: 1, delay: 2 }
 );
 gsap.fromTo(
   ".gsap-banner_1",
