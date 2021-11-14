@@ -509,7 +509,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--main-gray);
+    border-bottom: 3px solid var(--main-gray);
     background: top / cover no-repeat url('../images/lajolieagence.png');
     transition: all .250s ease-in;
 }

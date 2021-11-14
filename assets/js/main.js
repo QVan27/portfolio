@@ -241,5 +241,34 @@ gsap.fromTo(
 );
 
 gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.create({
+  trigger: "#about",
+  animation: gsap.fromTo(
+    ".about-content_p",
+    { x: -100, opacity: 0 },
+    { x: 0, opacity: 1, duration: 1 }
+  ),
+  start: "top center",
+  end: " center bottom",
+  scrub: 2,
+});
 
-
+var anim = document.querySelectorAll(".anim");
+anim.forEach((anims) => {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: anims,
+      start: "top bottom",
+      end: "center bottom",
+      scrub: 1.5,
+    },
+  });
+  tl.fromTo(
+    anims,
+    {
+      y: 100,
+      opacity: 0,
+    },
+    { y: 0, opacity: 1 }
+  );
+});
