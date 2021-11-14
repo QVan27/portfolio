@@ -172,7 +172,6 @@ const scroll = new Scrooth({
   deceleration: 0.975,
 });
 
-
 // =============================
 
 // OVERLAY
@@ -191,3 +190,44 @@ TweenMax.to(".third", 1.5, {
   top: "-100%",
   ease: Expo.easeInOut,
 });
+// BANNER
+gsap.fromTo(
+  ".gsap-banner_img",
+  1,
+  { opacity: 0 },
+  { opacity: 1, duration: 1, delay: 1.5 }
+);
+gsap.fromTo(
+  ".gsap-banner_1",
+  1,
+  { x: -200, opacity: 0 },
+  { x: 0, opacity: 1, duration: 1, delay: 1 }
+);
+gsap.fromTo(
+  ".gsap-banner_2",
+  1,
+  { y: 100, opacity: 0 },
+  { y: 0, opacity: 1, duration: 1, delay: 1.2 }
+);
+gsap.fromTo(
+  ".gsap-banner_3",
+  1,
+  { opacity: 0 },
+  { opacity: 1, duration: 1, delay: 1.8 }
+);
+gsap.fromTo(
+  ".gsap-banner_4",
+  1,
+  { x: 200, opacity: 0 },
+  { x: 0, opacity: 1, duration: 1, delay: 1.6 }
+);
+gsap.fromTo(
+  ".gsap-banner_5",
+  1,
+  { x: -200, opacity: 0 },
+  { x: 0, opacity: 1, duration: 1, delay: 1.4 }
+);
+
+gsap.registerPlugin(ScrollTrigger);
+
+

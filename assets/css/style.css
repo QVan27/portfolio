@@ -81,6 +81,10 @@ header #container-nav .nav-desktop ul li.link {
     letter-spacing: 2px;
 }
 
+main {
+    scroll-behavior: smooth;
+}
+
 .nav-desktop_link:after {
     content: '';
     position: absolute;
@@ -527,7 +531,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
 }
 
 #projects ul li a:hover::after {
-    opacity: .8;
+    opacity: .7;
 }
 
 .project-title {
