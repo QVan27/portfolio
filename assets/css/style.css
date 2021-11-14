@@ -69,7 +69,7 @@ header #container-nav .nav-desktop ul li.link {
     font-family: 'Montserrat', sans-serif;
 }
 
- .nav-desktop_link {
+.nav-desktop_link {
     mix-blend-mode: difference;
     display: inline-block;
     position: relative;
@@ -306,7 +306,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     padding: 0 7%;
 }
 
-section {
+#banner {
     width: 100%;
     height: 80vh;
     padding: 10vh 0;
@@ -427,12 +427,127 @@ section {
     color: var(--main-orange);
 }
 
-.distortion {
+/* .distortion {
     width: 580px;
     height: 720px;
     position: absolute;
     right: 300px;
     bottom: 0;
+} */
+
+#about {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.infinite_text {
+    position: absolute;
+    font-size: var(--font-xl);
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--main-gray);
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.infinite_text.top {
+    top: 0;
+}
+
+.infinite_text.bottom {
+    bottom: 0;
+}
+
+.about-content {
+    width: 72%;
+}
+
+.about-content_p {
+    color: var(--main-white);
+    font-size: var(--font-m);
+    font-weight: normal;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+}
+
+#projects {
+    width: 100%;
+    min-height: 80vh;
+    padding: 10vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects ul {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects ul li {
+    width: 100%;
+}
+
+#projects ul li a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-gray);
+    background: top / cover no-repeat url('../images/lajolieagence.png');
+}
+
+#projects ul li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-120deg, #000, #000);
+    opacity: 1;
+    z-index: 1;
+    transition: all .250s ease-in;
+}
+
+#projects ul li a>* {
+    z-index: 100;
+}
+
+#projects ul li a:hover::after {
+    opacity: .8;
+}
+
+.project-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--main-gray);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.project-desc {
+    color: var(--main-white);
+    font-size: var(--font-m);
+    font-weight: normal;
+    line-height: 29px;
+    letter-spacing: 0.02em;
 }
 
 /* ─── RESPONSIVE ────────────────────────────────────────── */
