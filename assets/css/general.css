@@ -17,6 +17,10 @@ font-family: 'Playfair Display', serif; */
     font-family: 'Cormorant Garamond', serif;
 }
 
+.mb-4 {
+    margin-bottom: 40px;
+}
+
 /* OVERLAY */
 
 .overlay {

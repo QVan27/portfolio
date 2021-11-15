@@ -274,3 +274,43 @@ anim.forEach((anims) => {
     { y: 0, opacity: 1 }
   );
 });
+
+var animLeft = document.querySelectorAll(".anim-left");
+animLeft.forEach((animLefts) => {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: animLefts,
+      start: "top center",
+      end: "center bottom",
+      scrub: 1.5,
+    },
+  });
+  tl.fromTo(
+    animLefts,
+    {
+      x: -100,
+      opacity: 0,
+    },
+    { x: 0, opacity: 1 }
+  );
+});
+
+var animLeft2 = document.querySelectorAll(".anim-left-2");
+animLeft2.forEach((animLeft2s) => {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: animLeft2s,
+      start: "top center",
+      end: "center bottom",
+      scrub: 3,
+    },
+  });
+  tl.fromTo(
+    animLeft2s,
+    {
+      x: -100,
+      opacity: 0,
+    },
+    { x: 0, opacity: 1 }
+  );
+});

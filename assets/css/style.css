@@ -590,6 +590,26 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     text-align: right;
 }
 
+#skills {
+    width: 100%;
+    height: 80vh;
+    padding: 10vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-skills {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 7%;
+}
+
+.skill {
+    color: var(--main-white);
+    width: 40%;
+}
+
 /* ─── RESPONSIVE ────────────────────────────────────────── */
 
 @media screen and (max-width: 1200px) {}
