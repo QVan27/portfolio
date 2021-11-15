@@ -146,22 +146,24 @@ burger.addEventListener("click", () => {
 // })();
 
 // new hoverEffect({
-//   parent: document.querySelector(".container-banner_img"),
+//   parent: document.querySelector(".container-banner_text_cta"),
 //   // intensity: 0.3,
-//   image1: "./assets/images/quentin.png",
-//   image2: "./assets/images/quentin.png",
+//   image1: "./assets/images/quentin.jpg",
+//   image2: "./assets/images/quentin.jpg",
 //   displacementImage: "./assets/images/diss.png",
-//   // imagesRatio: 100 / 100,
-//   intensity1: 0.1,
+//   imagesRatio: 1,
+//   intensity1: 0.5,
 //   intensity2: 0.1,
-//   // angle2: Math.PI / 2,
+//   // angle2: Math.PI / .5,
 // });
 
 // var myAnimation = new hoverEffect({
-// 	parent: document.querySelector('.container-banner_img'),
-// 	image1: './assets/images/quentin.jpg',
-// 	image2: './assets/images/quentin.jpg',
-// 	displacementImage: './assets/images/diss.png'
+//   parent: document.querySelector(".container-banner_text_cta"),
+//   image1: "./assets/images/quentin.jpg",
+//   image2: "./assets/images/quentin.jpg",
+//   displacementImage: "./assets/images/diss.png",
+//   imagesRatio: 100 / 100,
+//   intensity: 0.5,
 // });
 
 // SMOOTH SCROLL

@@ -361,7 +361,6 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
 .container-banner_text_title .desc {
     font-size: var(--font-l);
     text-align: right;
-    /* font-family: 'Playfair Display', serif; */
     font-style: normal;
     font-weight: normal;
     line-height: 48px;
@@ -378,7 +377,10 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* position: relative; */
+    /* z-index: 2; */
 }
+
 
 /* .container-banner_text_title p, .container-banner_text_title h1 {
     text-align: right;
@@ -438,6 +440,23 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     right: 300px;
     bottom: 0;
 } */
+
+/* .container-banner_text_cta {
+    position: relative;
+    z-index: 0;
+} */
+/* 
+.container-banner_text_cta:after {
+    content: "";
+    display: block;
+    padding-bottom: 130%; 
+} */
+
+.container-banner_text_cta canvas {
+    position: absolute;
+    z-index: 2;
+    mix-blend-mode: difference;
+}
 
 #about {
     position: relative;
