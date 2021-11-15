@@ -381,7 +381,6 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     /* z-index: 2; */
 }
 
-
 /* .container-banner_text_title p, .container-banner_text_title h1 {
     text-align: right;
 } */
@@ -445,6 +444,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     position: relative;
     z-index: 0;
 } */
+
 /* 
 .container-banner_text_cta:after {
     content: "";
@@ -529,8 +529,23 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     align-items: center;
     justify-content: space-between;
     border-bottom: 3px solid var(--main-gray);
-    background: top / cover no-repeat url('../images/lajolieagence.png');
     transition: all .250s ease-in;
+}
+
+#projects ul li a.hover_1 {
+    background: top / cover no-repeat url('../images/lajolieagence.png');
+}
+
+#projects ul li a.hover_2 {
+    background: top / cover no-repeat url('../images/csm.png');
+}
+
+#projects ul li a.hover_3 {
+    background: top / cover no-repeat url('../images/hdq.png');
+}
+
+#projects ul li a.hover_4 {
+    background: top / cover no-repeat url('../images/hestia.png');
 }
 
 #projects ul li a::after {
@@ -562,7 +577,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: transparent;
-    -webkit-text-stroke: 1px var(--main-gray);
+    -webkit-text-stroke: 1px var(--main-white);
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -572,6 +587,8 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     font-weight: normal;
     line-height: 29px;
     letter-spacing: 0.02em;
+    width: 50%;
+    text-align: right;
 }
 
 /* ─── RESPONSIVE ────────────────────────────────────────── */

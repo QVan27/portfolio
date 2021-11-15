@@ -6,6 +6,10 @@ body, html {
     overflow-x: hidden;
 }
 
+html { 
+    scroll-behavior: smooth; 
+  }
+
 /* font-family: 'Cormorant Garamond', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif; */
