@@ -88,7 +88,6 @@ header #container-nav .nav-desktop ul {
 
 header #container-nav .nav-desktop ul li {
     text-align: right;
-    /* height: 25px; */
 }
 
 header #container-nav .nav-desktop ul li.link {
@@ -106,6 +105,7 @@ header #container-nav .nav-desktop ul li.link {
     text-transform: uppercase;
     font-size: .7em;
     letter-spacing: 2px;
+    transition: transform 0.250s ease-out;
 }
 
 main {
@@ -129,6 +129,9 @@ main {
 .nav-desktop_link:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+.nav-desktop_link:hover {
+    color: var(--main-orange);
 }
 
 header #container-nav .nav-mobile {
@@ -404,13 +407,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* position: relative; */
-    /* z-index: 2; */
 }
-
-/* .container-banner_text_title p, .container-banner_text_title h1 {
-    text-align: right;
-} */
 
 .container-banner_text_title p.c-orange {
     font-size: var(--font-xl);
@@ -430,7 +427,6 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px var(--main-gray);
-    /* mix-blend-mode: difference; */
 }
 
 .container-banner_cta_title {
@@ -459,26 +455,6 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     color: var(--main-orange);
 }
 
-/* .distortion {
-    width: 580px;
-    height: 720px;
-    position: absolute;
-    right: 300px;
-    bottom: 0;
-} */
-
-/* .container-banner_text_cta {
-    position: relative;
-    z-index: 0;
-} */
-
-/* 
-.container-banner_text_cta:after {
-    content: "";
-    display: block;
-    padding-bottom: 130%; 
-} */
-
 .container-banner_text_cta canvas {
     position: absolute;
     z-index: 2;
@@ -493,6 +469,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .infinite_text {
@@ -635,6 +612,38 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
 .skill {
     color: var(--main-white);
     width: 40%;
+}
+
+footer {
+    position: relative;
+    z-index: 101;
+    background-color: var(--main-black);
+    overflow: hidden;
+}
+
+.container-footer {
+    padding: 10vh 7% 5vh 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    height: 40px;
+    color: var(--main-white);
+    border-top: 1px solid var(--main-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    font-size: var(--font-xs);
 }
 
 /* ─── RESPONSIVE ────────────────────────────────────────── */
