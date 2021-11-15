@@ -82,7 +82,7 @@ anim.forEach((anims) => {
   var tl = gsap.timeline({
     scrollTrigger: {
       trigger: anims,
-      start: "top bottom",
+      start: "top center",
       end: "center bottom",
       scrub: 1.5,
     },
@@ -102,7 +102,7 @@ animLeft.forEach((animLefts) => {
   var tl = gsap.timeline({
     scrollTrigger: {
       trigger: animLefts,
-      start: "top 60%",
+      start: "top center",
       end: "center bottom",
       scrub: 1,
     },
@@ -122,7 +122,7 @@ animLeft2.forEach((animLeft2s) => {
   var tl = gsap.timeline({
     scrollTrigger: {
       trigger: animLeft2s,
-      start: "top 60%",
+      start: "top center",
       end: "center bottom",
       scrub: 2,
     },

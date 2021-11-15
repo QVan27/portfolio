@@ -12,6 +12,33 @@ body::-webkit-scrollbar-thumb {
     border-radius: 100px;
 }
 
+/* html, html a {
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.cursor--small {
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 11000;
+    background: var(--main-white);
+}
+
+.cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12000;
+} */
+
 header {
     height: 80px;
     width: 100%;
@@ -306,7 +333,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
 }
 
 .wrap {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 0 7%;
 }
 
@@ -592,7 +619,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
 
 #skills {
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     padding: 10vh 0;
     display: flex;
     justify-content: center;
