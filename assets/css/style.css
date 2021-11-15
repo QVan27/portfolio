@@ -577,7 +577,7 @@ header #container-nav .nav-mobile .nav-mobile_link::before {
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: transparent;
-    -webkit-text-stroke: 1px var(--main-white);
+    -webkit-text-stroke: 1px var(--main-gray);
     font-family: 'Cormorant Garamond', serif;
 }
 
