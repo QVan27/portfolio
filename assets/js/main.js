@@ -11,11 +11,11 @@ document
   .appendChild(document.createTextNode(new Date().getFullYear()));
 
 // SMOOTH SCROLL
-const scroll = new Scrooth({
-  element: window,
-  strength: 10,
-  acceleration: 1.5,
-  deceleration: 0.975,
-});
+// const scroll = new Scrooth({
+//   element: window,
+//   strength: 10,
+//   acceleration: 1.5,
+//   deceleration: 0.975,
+// });
 
 // =============================
